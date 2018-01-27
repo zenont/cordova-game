@@ -3728,7 +3728,11 @@ var App = function () {
     _createClass(App, [{
         key: "initialize",
         value: function initialize() {
-            document.addEventListener('deviceready', this.onDeviceReady, false);
+            var _this = this;
+
+            document.addEventListener('deviceready', function () {
+                return _this.onDeviceReady();
+            }, false);
         }
     }, {
         key: "onDeviceReady",

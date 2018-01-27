@@ -53,7 +53,7 @@ interface ICordovaApp {
 
 export class App implements ICordovaApp {
     initialize() {
-        document.addEventListener('deviceready', this.onDeviceReady, false)
+        document.addEventListener('deviceready', () => this.onDeviceReady(), false)
     }
     onDeviceReady() {
         this.receivedEvent('deviceready')
