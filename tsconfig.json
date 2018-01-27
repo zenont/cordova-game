@@ -1,15 +1,7 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "es6",
-        "lib": [
-            "dom",
-            "es6",
-            "dom.iterable",
-            "es2015",
-            "es2015.core",
-            "scripthost",
-        ],
+        "target": "es2015",
+        "module": "commonjs",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "sourceMap": true,

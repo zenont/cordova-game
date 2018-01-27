@@ -6,7 +6,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "yarn tsc && yarn babel www/js/ -d www/js/ && yarn cordova run browser"
+        "webpack": "webpack --config ./src/webpack/config.ts",
+        "run": "cordova run browser",
+        "start": "run-s webpack run"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
@@ -37,7 +39,9 @@
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-preset-env": "^1.6.1",
         "cordova": "^8.0.0",
+        "npm-run-all": "^4.1.2",
         "ts-loader": "^3.3.1",
+        "ts-node": "^4.1.0",
         "typescript": "^2.6.2",
         "webpack": "^3.10.0"
     }
