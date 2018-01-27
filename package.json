@@ -20,5 +20,8 @@
         "platforms": [
             "browser"
         ]
+    },
+    "devDependencies": {
+        "cordova": "^8.0.0"
     }
 }
