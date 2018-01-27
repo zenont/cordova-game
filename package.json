@@ -5,7 +5,8 @@
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "yarn tsc && yarn cordova run browser"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
@@ -25,6 +26,8 @@
     },
     "devDependencies": {
         "@types/cordova": "^0.0.34",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
         "cordova": "^8.0.0",
         "typescript": "^2.6.2"
     }

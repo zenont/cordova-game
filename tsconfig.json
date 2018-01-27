@@ -1,7 +1,20 @@
 {
     "compilerOptions": {
         "target": "es5",
+        "lib": [
+            "dom",
+            "es5",
+            "dom.iterable",
+            "es2015",
+            "es2015.core",
+            "scripthost",
+        ],
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
         "sourceMap": true,
         "outDir": "./www/js"
-    }
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
 }
