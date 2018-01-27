@@ -24,6 +24,8 @@
         ]
     },
     "devDependencies": {
-        "cordova": "^8.0.0"
+        "@types/cordova": "^0.0.34",
+        "cordova": "^8.0.0",
+        "typescript": "^2.6.2"
     }
 }
