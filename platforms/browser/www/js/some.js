@@ -1,7 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+'use strict';
+
+exports.__esModule = true;
+exports.lol = lol;
 function lol() {
     return 'lol';
 }
-exports.lol = lol;
 //# sourceMappingURL=some.js.map
