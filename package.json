@@ -7,9 +7,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "cleanup": "rimraf ./www/js/",
-        "webpack": "webpack --config ./src/webpack/config.ts",
+        "bundle": "webpack --config ./src/webpack/config.ts",
         "run": "cordova run browser",
-        "start": "run-s webpack run"
+        "start": "run-s cleanup bundle run"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
